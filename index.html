@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Calculadora</title>
+   <link rel="stylesheet" type="text/css" href="style.css">
+   <script src="script.js"></script>
+</head>
+<body>
+   <div id="calculadora">
+
+      <div id="screen">
+            <input type="text" id="resultado" value="">
+
+         
+      </div>
+      
+      <div id="botoes">
+
+         <div>
+            <button onclick="calcular('number', 7)" class="botoes">7</button>
+            <button onclick="calcular('number', 8)" class="botoes">8</button>
+            <button onclick="calcular('number', 9)" class="botoes">9</button>
+            <button onclick="calcular('opera', '/')" class="botoes" id="opera">&divide;</button>
+         </div>
+
+         <div>
+            <button onclick="calcular('number', 4)" class="botoes">4</button>
+            <button onclick="calcular('number', 5)" class="botoes">5</button>
+            <button onclick="calcular('number', 6)" class="botoes">6</button>
+            <button onclick="calcular('opera', '*')" class="botoes" id="opera">&times;</button>
+         </div>
+
+         <div>
+            <button onclick="calcular('number', 1)" class="botoes">1</button>
+            <button onclick="calcular('number', 2)" class="botoes">2</button>
+            <button onclick="calcular('number', 3)" class="botoes">3</button>
+            <button onclick="calcular('opera', '+')" class="botoes" id="opera">+</button>
+         </div>
+
+         <div >
+            <button onclick="calcular('opera', 'c')" class="botoes" id="opera">C</button>
+            <button onclick="calcular('number', 0)" class="botoes">0</button>
+            <button onclick="calcular('opera', '-')" class="botoes" id="opera">-</button>
+            <button onclick="calcular('opera', '=')" class="botoes" id="opera">=</button>
+         </div>
+
+      </div>
+
+   </div>
+</body>
+</html>
